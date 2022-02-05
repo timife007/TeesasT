@@ -4,7 +4,14 @@
     android:checkableBehavior="single">
     <item
         android:id="@+id/dashboardFragment"
-        android:title="@string/dashboard"/>
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/ic_more"
+        android:title="@string/more"/>
+
+
 </group>
 
 </menu>
