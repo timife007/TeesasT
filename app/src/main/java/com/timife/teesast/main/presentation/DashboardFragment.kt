@@ -6,10 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.timife.teesast.R
+import com.timife.teesast.databinding.FragmentDashboardBinding
 
 
 class DashboardFragment : Fragment() {
-
+    private lateinit var dashboardBinding: FragmentDashboardBinding
 
 
     override fun onCreateView(
@@ -17,7 +18,8 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard, container, false)
+        dashboardBinding = FragmentDashboardBinding.inflate(inflater)
+        return dashboardBinding.root
     }
 
 }
