@@ -1,5 +1,8 @@
 package com.timife.teesast.auth.data
 
-//data class AuthResponse(
-//
-//)
+
+import com.google.gson.annotations.SerializedName
+
+data class AuthResponse(
+    val status: Boolean // true
+)
