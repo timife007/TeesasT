@@ -9,7 +9,11 @@
         android:id="@+id/dashboardFragment"
         tools:layout="@layout/fragment_dashboard"
         android:name="com.timife.teesast.main.presentation.DashboardFragment"
-        android:label="Home" />
+        android:label="Home" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+    </fragment>
     <fragment
         android:id="@+id/moreFragment"
         tools:layout="@layout/fragment_more"

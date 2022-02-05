@@ -3,7 +3,9 @@ package com.timife.teesast.auth
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.timife.teesast.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

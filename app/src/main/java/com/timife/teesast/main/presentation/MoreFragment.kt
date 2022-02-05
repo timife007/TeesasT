@@ -6,16 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.timife.teesast.R
+import com.timife.teesast.databinding.FragmentMoreBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MoreFragment : Fragment() {
-  private lateinit var moreBinding : com.timife.teesast.databinding.FragmentMoreBinding
+  private lateinit var moreBinding : FragmentMoreBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_more, container, false)
+        moreBinding = FragmentMoreBinding.inflate(inflater)
+        return moreBinding.root
     }
 }

@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.timife.teesast.R
 import com.timife.teesast.databinding.FragmentDashboardBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class DashboardFragment : Fragment() {
     private lateinit var dashboardBinding: FragmentDashboardBinding
 
