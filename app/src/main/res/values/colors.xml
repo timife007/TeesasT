@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teesGreen">#FF15D60E</color>
+    <color name="white">#FFffffff</color>
+    <color name="black">#FF000000</color>
+    <color name="orange">#FFC9800A</color>
+    <color name="pink">#FFE84A4A</color>
+    <color name="cyan">#FF144574</color>
+    <color name="dark">#FF424242</color>
+
+
+</resources>
