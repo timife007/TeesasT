@@ -5,12 +5,15 @@
     android:id="@+id/auth_graph"
     app:startDestination="@id/loginFragment">
 
-
     <fragment
         android:id="@+id/signupFragment"
         android:name="com.timife.teesast.auth.presentation.SignupFragment"
         tools:layout="@layout/fragment_signup"
-        android:label="SignupFragment" />
+        android:label="SignupFragment" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.timife.teesast.auth.presentation.LoginFragment"

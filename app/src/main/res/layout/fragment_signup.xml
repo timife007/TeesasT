@@ -169,7 +169,7 @@
                         android:textStyle="bold" />
 
                     <ProgressBar
-                        android:id="@+id/progress_signIn"
+                        android:id="@+id/progress_signUp"
                         style="?android:attr/progressBarStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -180,13 +180,13 @@
 
                 </androidx.cardview.widget.CardView>
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/login_option"
+                    android:id="@+id/back_to_login"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Already have an account?"
+                    android:text="@string/already_have_an_account"
                     android:textColor="@color/teesGreen"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
