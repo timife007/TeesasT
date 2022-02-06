@@ -1,7 +1,5 @@
 package com.timife.teesast.common.di
 
-import com.timife.teesast.auth.data.AuthDataSource
-import com.timife.teesast.auth.data.AuthDataSourceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

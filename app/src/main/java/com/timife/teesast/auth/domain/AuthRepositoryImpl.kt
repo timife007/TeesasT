@@ -1,7 +1,29 @@
 package com.timife.teesast.auth.domain
 
+import com.timife.teesast.auth.data.AuthApi
+import com.timife.teesast.auth.data.AuthResponse
+import com.timife.teesast.common.di.dispatchers.IoDispatcher
+import com.timife.teesast.utils.Result
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor(
-
-) : AuthRepository
+    @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
+    private val apiService: AuthApi
+) : AuthRepository {
+    override suspend fun registerUser(): Result<AuthResponse> =
+        withContext(ioDispatcher) {
+            return@withContext try {
+                val result = apiService.register()
+                if (result.isSuccessful){
+                    val auth = result.body()
+                    Result.Success(auth)
+                }else{
+                    Result.Success(null)
+                }
+            }catch (exception:Exception){
+                Result.Error(exception)
+            }
+        }
+}
