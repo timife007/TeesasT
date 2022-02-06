@@ -10,15 +10,15 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class LoginFragment : Fragment() {
-private lateinit var binding : FragmentLoginBinding
+private lateinit var loginBinding : FragmentLoginBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentLoginBinding.inflate(inflater)
-        return binding.root
+        loginBinding = FragmentLoginBinding.inflate(inflater)
+        return loginBinding.root
     }
 
 }
