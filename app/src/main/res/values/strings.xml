@@ -16,6 +16,6 @@
     <string name="enter_mobile_number">Enter Mobile Number</string>
     <string name="please_sign_up_to_continue">Please sign up to continue</string>
     <string name="login_image">login image</string>
-    <string name="welcome">Welcome\nBack,</string>
+    <string name="welcome">Welcome</string>
     <string name="already_have_an_account">Already have an account?</string>
 </resources>
