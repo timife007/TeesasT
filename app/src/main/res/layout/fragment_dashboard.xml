@@ -23,7 +23,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/hello"
                     android:id="@+id/hello"
-                    android:layout_margin="35dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:textColor="@color/hint"
@@ -46,7 +47,8 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="35dp"
-                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/custom_ripple"
+                    android:layout_marginEnd="25dp"
                     android:clickable="true"
                     app:civ_border_color="@color/hint"
                     app:civ_border_width="1dp"
@@ -62,11 +64,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:elevation="25dp"
-                    android:layout_marginStart="35dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/user_name"
-                    android:layout_marginEnd="35dp"
+                    android:layout_marginEnd="15dp"
                     app:mt_hint="Search Subjects"
                     app:mt_hintColor="@color/ripple"
                     app:mt_maxSuggestionsCount="10"
@@ -85,6 +87,8 @@
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="8dp"
                     android:textAllCaps="false"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:background="@drawable/custom_ripple"
                     android:text="@string/see_all"
                     android:textColor="@color/black"
@@ -104,8 +108,8 @@
                     android:useDefaultMargins="true"
                     android:rowOrderPreserved="true"
                     android:columnOrderPreserved="true"
-                    android:paddingStart="30dp"
-                    android:paddingEnd="30dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
                     android:rowCount="2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -116,12 +120,15 @@
                         android:id="@+id/fragment_esv"
                         style="@style/card_item"
                         android:layout_gravity="center|start"
-                        android:layout_width="160dp"
+                        android:layout_width="175dp"
                         android:layout_height="93dp"
                         android:backgroundTint="@color/cyan">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/custom_ripple"
                             android:layout_height="match_parent">
 
                             <ImageView
@@ -165,13 +172,16 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fragment_esv_2"
                         style="@style/card_item"
-                        android:layout_width="160dp"
+                        android:layout_width="175dp"
                         android:layout_gravity="center|end"
                         android:layout_height="93dp"
                         android:backgroundTint="@color/orange">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/custom_ripple"
                             android:layout_height="match_parent">
 
                             <ImageView
@@ -205,13 +215,19 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fragment_esv_3"
                         style="@style/card_item"
-                        android:layout_width="160dp"
+                        android:layout_width="175dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/custom_ripple"
                         android:layout_height="93dp"
                         android:layout_gravity="center|end"
                         android:backgroundTint="@color/pink">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/custom_ripple"
                             android:layout_height="match_parent">
 
                             <ImageView
@@ -253,13 +269,16 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fragment_esv_4"
                         style="@style/card_item"
-                        android:layout_width="160dp"
+                        android:layout_width="175dp"
                         android:layout_gravity="center|end"
                         android:layout_height="93dp"
                         android:backgroundTint="@color/blue">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/custom_ripple"
                             android:layout_height="match_parent">
 
                             <ImageView
