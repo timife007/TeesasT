@@ -19,4 +19,7 @@
     <string name="welcome">Welcome</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="please_login_to_continue">Please login to continue</string>
+    <string name="hello">Hello,</string>
+    <string name="georgina">Georgina!</string>
+    <string name="see_all">See all</string>
 </resources>
