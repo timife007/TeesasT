@@ -69,7 +69,7 @@
                     android:hint="@string/email"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/hint"
+                    android:textColorHint="@color/ripple"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/signup_text"
                     android:autofillHints="" />
@@ -86,7 +86,7 @@
                     android:hint="@string/full_name"
                     android:inputType="textAutoComplete"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/hint"
+                    android:textColorHint="@color/ripple"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/email"
                     android:importantForAutofill="no" />
@@ -102,11 +102,13 @@
                     android:drawablePadding="10dp"
                     android:hint="@string/password"
                     android:layout_marginStart="25dp"
-                    android:inputType="textPassword|numberPassword"
+                    android:inputType="textPassword"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/hint"
+                    android:textColorHint="@color/ripple"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/name" />
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    android:importantForAutofill="no"
+                    android:autofillHints="" />
                 <EditText
                     android:id="@+id/location"
                     android:layout_width="match_parent"
@@ -118,7 +120,7 @@
                     android:drawablePadding="10dp"
                     android:hint="@string/city_nearest_location"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/hint"
+                    android:textColorHint="@color/ripple"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/password" />
 
@@ -134,7 +136,7 @@
                     android:hint="@string/enter_mobile_number"
                     android:inputType="number"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/hint"
+                    android:textColorHint="@color/ripple"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/location" />
 
@@ -176,7 +178,7 @@
                         android:layout_gravity="end"
                         android:indeterminateTint="@color/white"
                         android:indeterminateTintMode="src_atop"
-                        app:visibility="gone" />
+                        android:visibility="gone" />
 
                 </androidx.cardview.widget.CardView>
                 <com.google.android.material.button.MaterialButton

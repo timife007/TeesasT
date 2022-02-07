@@ -10,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import com.timife.teesast.databinding.FragmentLoginBinding
 import com.timife.teesast.main.presentation.MainActivity
 import com.timife.teesast.utils.Messages
-import com.timife.teesast.utils.enable
 import com.timife.teesast.utils.startNewActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -29,14 +28,10 @@ private lateinit var loginBinding : FragmentLoginBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        loginBinding.loginButton.enable(false)
-        val email = loginBinding.email.text.toString().trim()
-        val password = loginBinding.password.text.toString().trim()
-        if(email.isNotEmpty() && password.isNotEmpty()){
-            loginBinding.loginButton.enable(true)
-        }
 
         loginBinding.loginText.setOnClickListener {
+            val email = loginBinding.email.text.toString().trim()
+            val password = loginBinding.password.text.toString().trim()
             validateAndLogin(email, password)
         }
         loginBinding.createAccount.setOnClickListener{
@@ -61,6 +56,7 @@ private lateinit var loginBinding : FragmentLoginBinding
             loginBinding.password.error = Messages.SHORT_PASSWORD
             loginBinding.password.requestFocus()
         }else{
+            loginBinding.progressSignIn.visibility =View.VISIBLE
             requireActivity().startNewActivity(MainActivity::class.java)
         }
     }

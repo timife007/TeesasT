@@ -23,6 +23,9 @@
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:id="@+id/bottom_nav_view"
+            app:itemIconTint="@drawable/icon_tint"
+            app:itemRippleColor="@color/ripple"
+            app:itemTextColor="@color/black"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

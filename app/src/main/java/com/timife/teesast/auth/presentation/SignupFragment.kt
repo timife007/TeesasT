@@ -31,22 +31,20 @@ class SignupFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View {
         signupBinding =FragmentSignupBinding.inflate(inflater)
-        signupBinding.signupButton.enable(false)
+//        signupBinding.signupButton.enable(false)
         return signupBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val email = signupBinding.email.text.toString().trim()
-        val name = signupBinding.name.text.toString().trim()
-        val password = signupBinding.password.text.toString().trim()
-        val location = signupBinding.location.text.toString().trim()
-        val phoneNumber = signupBinding.mobile.text.toString().trim()
-        if(email.isNotEmpty() && name.isNotEmpty() && password.isNotEmpty() && location.isNotEmpty() && phoneNumber.isNotEmpty()){
-            signupBinding.signupButton.enable(true)
-        }
+
 
         signupBinding.signupButtonText.setOnClickListener {
+            val email = signupBinding.email.text.toString().trim()
+            val name = signupBinding.name.text.toString().trim()
+            val password = signupBinding.password.text.toString().trim()
+            val location = signupBinding.location.text.toString().trim()
+            val phoneNumber = signupBinding.mobile.text.toString().trim()
             validateAndCreate(
                 email, name, password, location,phoneNumber
             )
@@ -100,15 +98,15 @@ class SignupFragment: Fragment() {
         location: String,
         phone:String
     ){
-        if (name.isEmpty()) {
-            signupBinding.name.error = Messages.BLANK_FIELDS_IN_FORM
-            signupBinding.name.requestFocus()
-        } else if (email.isEmpty()) {
+        if (email.isEmpty()) {
             signupBinding.email.error = Messages.BLANK_FIELDS_IN_FORM
             signupBinding.email.requestFocus()
         }else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             signupBinding.email.error = "Please provide valid email!"
             signupBinding.email.requestFocus()
+        } else if (name.isEmpty()) {
+            signupBinding.name.error = Messages.BLANK_FIELDS_IN_FORM
+            signupBinding.name.requestFocus()
         } else if (password.isEmpty()) {
             signupBinding.password.error = Messages.BLANK_FIELDS_IN_FORM
             signupBinding.password.requestFocus()
@@ -121,6 +119,7 @@ class SignupFragment: Fragment() {
             signupBinding.mobile.error = Messages.BLANK_FIELDS_IN_FORM
         } else {
             signUp(email,name,password,location,phone)
+
         }
     }
 

@@ -27,7 +27,10 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideOkHttpClient(interceptor: HttpLoggingInterceptor,networkStatusInterceptor: NetworkStatusInterceptor): OkHttpClient {
+    fun provideOkHttpClient(
+        interceptor: HttpLoggingInterceptor,
+        networkStatusInterceptor: NetworkStatusInterceptor
+    ): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(interceptor)
             .addInterceptor(networkStatusInterceptor)
@@ -63,6 +66,4 @@ object AppModule {
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
     }
-
-
 }
