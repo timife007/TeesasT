@@ -22,4 +22,10 @@
     <string name="hello">Hello,</string>
     <string name="georgina">Georgina!</string>
     <string name="see_all">See all</string>
+    <string name="know_more_about_how_we_re_making_an_nimpact_on_the_future_of_learning">Know more about how we\'re making an \nimpact on the future of learning</string>
+    <string name="teesas_place">Teesas Place</string>
+    <string name="access_to_high_quality_videos">Access to high quality videos</string>
+    <string name="subscribe_now">Subscribe Now</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="bring_your_friends_along_on_this_exciting_nlearning_experience_with_teesas">Bring your friends along on this exciting \nlearning experience with Teesas</string>
 </resources>

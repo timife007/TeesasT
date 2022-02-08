@@ -520,7 +520,7 @@
                             android:layout_height="wrap_content"
                             app:layout_constraintStart_toStartOf="@id/subscribe_title"
                             app:layout_goneMarginStart="15dp"
-                            android:text="Access to high quality videos"
+                            android:text="@string/access_to_high_quality_videos"
                             android:textColor="@color/white"
                             app:layout_constraintTop_toBottomOf="@id/subscribe_title"
                             android:textSize="16sp"
@@ -534,8 +534,6 @@
                             android:layout_height="40dp"
                             android:layout_marginStart="50dp"
                             android:layout_marginTop="10dp"
-                            android:clickable="true"
-
                             android:layout_marginEnd="50dp"
                             android:background="@drawable/custom_ripple"
                             app:cardBackgroundColor="@color/white"
@@ -553,7 +551,7 @@
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:gravity="center"
-                                android:text="Subscribe Now"
+                                android:text="@string/subscribe_now"
                                 android:textColor="@color/teesGreen"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -570,6 +568,115 @@
 
                         </androidx.cardview.widget.CardView>
 
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teesas_place"
+                    android:layout_margin="20dp"
+                    app:layout_constraintStart_toStartOf="@id/subscribe_card"
+                    app:layout_constraintEnd_toEndOf="@id/subscribe_card"
+                    app:layout_constraintTop_toBottomOf="@id/subscribe_card"
+                    android:backgroundTint="@color/white"
+                    style="@style/card_item"
+                    android:paddingBottom="10dp">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/location"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_place"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                             />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toEndOf="@id/location"
+                            app:layout_goneMarginStart="15dp"
+                            android:text="@string/teesas_place"
+                            android:textColor="@color/black"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="14dp"
+                            android:textSize="20sp"
+                            android:id="@+id/place_title"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="@id/place_title"
+                            app:layout_goneMarginStart="15dp"
+                            android:text="@string/know_more_about_how_we_re_making_an_nimpact_on_the_future_of_learning"
+                            android:textColor="@color/black"
+                            app:layout_constraintTop_toBottomOf="@id/place_title"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            android:id="@+id/place_text"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/share"
+                    app:layout_constraintStart_toStartOf="@id/teesas_place"
+                    app:layout_constraintEnd_toEndOf="@id/teesas_place"
+                    app:layout_constraintTop_toBottomOf="@id/teesas_place"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="@color/white"
+                    style="@style/card_item"
+                    android:paddingBottom="10dp">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/share_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_share"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toEndOf="@id/share_icon"
+                            app:layout_goneMarginStart="15dp"
+                            android:text="@string/share_with_friends"
+                            android:textColor="@color/black"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="14dp"
+                            android:textSize="20sp"
+                            android:id="@+id/share_title"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="@id/share_title"
+                            app:layout_goneMarginStart="15dp"
+                            android:text="@string/bring_your_friends_along_on_this_exciting_nlearning_experience_with_teesas"
+                            android:textColor="@color/black"
+                            app:layout_constraintTop_toBottomOf="@id/share_title"
+                            android:textSize="16sp"
+                            android:textStyle="normal"
+                            android:id="@+id/share_text"
+                            />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>

@@ -10,14 +10,18 @@
         <entry key="app/src/main/res/drawable/ic_arrow_2.xml" value="0.2775" />
         <entry key="app/src/main/res/drawable/ic_book.xml" value="0.2775" />
         <entry key="app/src/main/res/drawable/ic_bookmark.xml" value="0.2105" />
+        <entry key="app/src/main/res/drawable/ic_chart.xml" value="0.2775" />
         <entry key="app/src/main/res/drawable/ic_dashboard.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/ic_eng_1.xml" value="0.2775" />
         <entry key="app/src/main/res/drawable/ic_eng_2.xml" value="0.2775" />
         <entry key="app/src/main/res/drawable/ic_eng_3.xml" value="0.2775" />
+        <entry key="app/src/main/res/drawable/ic_location.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/ic_maths.xml" value="0.2775" />
         <entry key="app/src/main/res/drawable/ic_more.xml" value="0.2105" />
+        <entry key="app/src/main/res/drawable/ic_place.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/ic_science.xml" value="0.22" />
         <entry key="app/src/main/res/drawable/ic_science_2.xml" value="0.2775" />
+        <entry key="app/src/main/res/drawable/ic_share.xml" value="0.2005" />
         <entry key="app/src/main/res/layout/activity_auth.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_bookmark.xml" value="0.32864583333333336" />
