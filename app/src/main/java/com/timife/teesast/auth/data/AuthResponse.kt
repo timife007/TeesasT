@@ -7,5 +7,6 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class AuthResponse(
-    val status: Boolean // true
+    val status: Boolean,
+    val message:String// true
 ):Parcelable
