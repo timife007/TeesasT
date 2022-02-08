@@ -1,48 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView android:layout_width="match_parent"
-    android:layout_height="93dp"
-    android:id="@+id/fragment_esv"
+    android:layout_height="wrap_content"
+    android:id="@+id/subscribe_card"
     android:layout_margin="20dp"
-    android:backgroundTint="@color/orange"
+    android:backgroundTint="@color/teesGreen"
     style="@style/card_item"
+    android:paddingBottom="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:paddingBottom="10dp"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/image_emer"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_marginEnd="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/genius"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_school"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="0dp"
-            android:contentDescription="Yoruba"
-            android:src="@drawable/ic_science" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.197" />
 
-        <ImageView
-            android:id="@+id/image_emer_2"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginEnd="-5dp"
-            android:layout_marginBottom="-9dp"
-            android:contentDescription="Yoruba"
-            android:src="@drawable/ic_science_2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            android:text="Science"
+            app:layout_constraintStart_toEndOf="@id/genius"
+            app:layout_goneMarginStart="15dp"
+            android:text="Make your child a Genius"
             android:textColor="@color/white"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="24dp"
-            android:textSize="18sp"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:id="@+id/quick_title"
             android:textStyle="bold"
-            android:layout_marginStart="24dp"/>
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/quick_title"
+            app:layout_goneMarginStart="15dp"
+            android:text="Access to high quality videos"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/quick_title"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:id="@+id/quick_text"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/subscribe_now"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/custom_ripple"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quick_text">
+
+            <TextView
+                android:id="@+id/login_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="Subscribe Now"
+                android:textColor="@color/teesGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/progress_signIn"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_arrow_2" />
+
+        </androidx.cardview.widget.CardView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fragment_esv"
+    android:layout_margin="20dp"
+    android:backgroundTint="@color/white"
+    style="@style/card_item"
+    android:paddingBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_book"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.197" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/ebook"
+            app:layout_goneMarginStart="15dp"
+            android:text="E-Book"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:id="@+id/book_title"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/book_title"
+            app:layout_goneMarginStart="15dp"
+            android:text="Deepen your knowledge! Gain access to \nexciting books and learning materials"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/book_title"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:id="@+id/book_text"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
