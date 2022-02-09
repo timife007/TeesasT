@@ -1,7 +1,6 @@
-package com.timife.teesast.auth.domain
+package com.timife.teesast.auth.data
 
-import com.timife.teesast.auth.data.AuthApi
-import com.timife.teesast.auth.data.AuthResponse
+import com.timife.teesast.auth.domain.AuthRepository
 import com.timife.teesast.common.di.dispatchers.IoDispatcher
 import com.timife.teesast.utils.Result
 import kotlinx.coroutines.CoroutineDispatcher
